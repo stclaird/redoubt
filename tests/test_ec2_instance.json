@@ -1,0 +1,11 @@
+{
+  "region": "eu-west-1",
+  "type": "ec2instance",
+  "hostname": "dave.vpc.local",
+  "ami_id" : "ami-ebd02392",
+  "subnet_id" : "subnet-dd8758b9",
+  "elb_name" : "None",
+  "key_name" : "mykey.euw1a",
+  "instance_type" : "t2.micro",
+  "iam_profile" : "SomeProfile"
+}

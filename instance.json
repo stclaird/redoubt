@@ -1,0 +1,30 @@
+{
+  "region": "eu-west-1",
+  "host_name": "dave.local",
+  "ami_id" : "ami-ebd02392",
+  "subnet_id" : "subnet-dd8758b9",
+  "elb_name" : "None",
+  "key_name" : "mykey.euw1a",
+  "instance_type" : "t2.micro",
+  "assign_public_ip" : true,
+  "iam_profile" : "someiamprofile",
+  "security_groups" : ["sg-6a1d4e0c"],
+  "block_devices" : [{
+                      "DeviceName": "/dev/sda1",
+                      "Ebs" : {
+                      "VolumeSize" : 16,
+                      "VolumeType" : "standard",
+                      "DeleteOnTermination": true
+                       }
+                    },
+                    {
+                      "DeviceName": "/dev/xvdb",
+                      "Ebs" : {
+                      "VolumeSize" : 16,
+                      "VolumeType" : "standard",
+                      "DeleteOnTermination": true
+                       }
+                    }],
+  "user_data_snippets" : ["userdata/rhel-hostname"]
+
+}
